@@ -1,0 +1,62 @@
+uuid: f1376894-45d0-4b5d-a34c-7d459c7430a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resource.body
+    - field.field.node.resource.field_file
+    - field.field.node.resource.field_grade_levels
+    - field.field.node.resource.field_image
+    - field.field.node.resource.field_resource_type
+    - field.field.node.resource.field_subject
+    - node.type.resource
+  module:
+    - image
+    - user
+id: node.resource.teaser
+targetEntityType: node
+bundle: resource
+mode: teaser
+content:
+  field_grade_levels:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_resource_type:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_subject:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_file: true

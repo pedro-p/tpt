@@ -1,0 +1,29 @@
+uuid: e96619a1-320e-433c-bdc7-26cddd5efb8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grade_levels
+    - node.type.resource
+    - taxonomy.vocabulary.grades
+id: node.resource.field_grade_levels
+field_name: field_grade_levels
+entity_type: node
+bundle: resource
+label: 'Grade Levels'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grades: grades
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

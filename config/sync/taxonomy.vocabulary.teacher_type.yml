@@ -1,0 +1,9 @@
+uuid: a1e1a63a-de7e-4e44-82b6-97538dbb02c8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Teacher type'
+vid: teacher_type
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,27 @@
+uuid: 6b4d0a9b-0bc1-4d2e-84a0-2f21aa5cb453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.resource
+  module:
+    - file
+id: node.resource.field_file
+field_name: field_file
+entity_type: node
+bundle: resource
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt zip mov jpg jpeg png gif pdf doc docx ppt pptx xls xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
