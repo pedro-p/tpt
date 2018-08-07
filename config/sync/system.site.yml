@@ -1,11 +1,11 @@
 uuid: 3792ec0f-4967-464a-87dd-b8408648b1a7
-name: 'Drush Site-Install'
+name: TPT
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /resources
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
